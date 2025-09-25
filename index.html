@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logu.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <!-- Floating WhatsApp Icon -->
+<a href="https://wa.me/92 312 5070383" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+        <div class="container">
+            <nav>
+                <div class="logo-area">
+                    <img src="images/logu.jpg" alt="Rahyn Noor Quran" class="logo-img">
+                    <div class="logo-text">
+                        <h1>RAH E NOOR</h1>
+                        <p>Quran Site</p>
+                    </div>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                    <li><a href="#courses" class="nav-link" data-page="courses">Courses</a></li>
+                    <li><a href="#course-detail" class="nav-link" data-page="course-detail">Course Detail</a></li>
+                    <li><a href="#classes" class="nav-link" data-page="classes">Classes</a></li>
+                    <li><a href="#blogs" class="nav-link" data-page="blogs">Blogs</a></li>
+                    <li><a href="#about" class="nav-link" data-page="about">About us</a></li>
+                    <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+                </ul>
+
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Blog Detail Modal -->
+    <div class="blog-modal">
+        <div class="modal-content">
+            <span class="close-modal"><i class="fas fa-times"></i></span>
+            <div class="modal-blog-img"></div>
+            <div class="modal-blog-content">
+                <h2 class="modal-blog-title"></h2>
+                <div class="modal-blog-meta">
+                    <span><i class="far fa-calendar"></i> <span class="modal-blog-date"></span></span>
+                    <span><i class="far fa-user"></i> <span class="modal-blog-author"></span></span>
+                </div>
+                <div class="modal-blog-text"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Page -->
+    <section id="home" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="slider">
+                <div class="slide slide-1 active"></div>
+                <div class="slide slide-2"></div>
+                <div class="slide slide-3"></div>
+            </div>
+            
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Why Choose Us</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>100% Free Courses</h3>
+                        <p>All our Islamic courses are completely free of cost only for Females.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>New Courses Regularly</h3>
+                        <p>We launch new courses every 2-3 months with updated content.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Authentic Knowledge</h3>
+                        <p>We focus on providing authentic Islamic knowledge from reliable sources.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section class="courses">
+            <div class="container">
+                <h2 class="section-title">Current Active Courses</h2>
+                <div class="course-cards">
+                    <div class="course-card">
+                        <div class="course-img" style="background-image: url('images/QURANIC.jpg')"></div>
+                        <div class="course-content">
+                            <h3 class="course-title">Women's Quranic Journey</h3>
+                            <p>This course explores the status, rights and role of women in the light of the Quran and authentic Hadith. Delivered by respected speaker Tahira Tariq, it offers a clear and insightful understanding for today's learners.</p>
+                            <div class="course-info">
+                                <span><i class="far fa-clock"></i> Live Now</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-img" style="background-image: url('images/muslim.jpg')"></div>
+                        <div class="course-content">
+                            <h3 class="course-title">Emotional Spiritual Self Development </h3>
+                            <p>This course helps you nurture your emotional balance and 
+                                spiritual growth, providing practical guidance for personal development and a positive mindset.</p>
+                            <div class="course-info">
+                                <span><i class="far fa-clock"></i> Upcoming</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card">
+                        <div class="course-img" style="background-image: url('images/quran.jpg')"></div>
+                        <div class="course-content">
+                            <h3 class="course-title">Tajweed Course</h3>
+                            <p>This online course provides clear and practical guidance on proper Quranic recitation, 
+                                teaching correct pronunciation, 
+                                rules of Tajweed, and fluency, helping learners recite with confidence and accuracy.</p>
+                            <div class="course-info">
+                                <span><i class="far fa-clock"></i> Upcoming </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Courses Page -->
+    <section id="courses" class="page">
+        <div class="container" style="padding-top: 5rem; padding-bottom: 5rem;">
+            <h2 class="section-title">All Courses</h2>
+            <div class="course-cards">
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('images/54.jpg')"></div>
+                    <div class="course-content">
+                        <h3 class="course-title">Hajj – A Spiritual Journey</h3>
+                        <p>This course, led by Speaker Mehak Naiz, guided participants through Hajj rituals in light of Quran and
+                             Hadith, inspiring confidence, 
+                            sincerity, and deeper spiritual connection while providing practical guidance for a mindful pilgrimage.</p>
+                        <div class="course-info">
+                            <span><i class="far fa-clock"></i> Completed</span>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('images/Allah.webp')"></div>
+                    <div class="course-content">
+                        <h3 class="course-title">Surah Noor – Tafseer</h3>
+                        <p>This course, led by CEO Izba Sultan, offered an insightful Tafseer of Surah Noor, highlighting its teachings and practical applications, helping participants understand the Surah clearly and deepen their spiritual connection.</p>
+                        <div class="course-info">
+                            <span><i class="far fa-clock"></i> Completed</span>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('images/Radiant\ Light\ from\ the\ Quran.png')"></div>
+                    <div class="course-content">
+                        <h3 class="course-title">Surah Doha – Tafseer</h3>
+                        <p>This course, led by Mehak Naiz, provided a detailed Tafseer of Surah Doha, highlighting its teachings 
+                            and practical applications, helping participants understand the Surah clearly and deepen their spiritual connection.</p>
+                        <div class="course-info">
+                            <span><i class="far fa-clock"></i> Completed</span>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('images/Serie\ Parda\ con\ Silueta.png')"></div>
+                    <div class="course-content">
+                        <h3 class="course-title">Parda Series – Modesty in Islam</h3>
+                        <p>This series explored the concept of modesty and hijab in Islam, 
+                            highlighting Quranic guidance and authentic Hadith.
+                        It helped participants understand its spiritual significance, practical application, and positive impact on personal and social life.</p>
+                        <div class="course-info">
+                            <span><i class="far fa-clock"></i> Completed</span>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('images/fa.jpg')"></div>
+                    <div class="course-content">
+                        <h3 class="course-title">Surah Fatiha – Tajweed & Tafseer</h3>
+                        <p>This course explored Surah Fatiha with a focus on Tajweed and Tafseer, guiding participants through 
+                            its pronunciation, meanings, and lessons, 
+                            helping them improve recitation, deepen understanding, and strengthen their spiritual connection.</p>
+                        <div class="course-info">
+                            <span><i class="far fa-clock"></i> Completed</span>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-img" style="background-image: url('images/IMG_9079.webp')"></div>
+                    <div class="course-content">
+                        <h3 class="course-title">Ishq-e-Haqiqi – True Love for Allah</h3>
+                        <p>This course explored the concept of Ishq-e-Haqiqi, guiding participants to understand true 
+                            love for Allah through Quran and Hadith, 
+                            inspiring spiritual growth, deepening faith, and encouraging a closer, more devoted connection to the Creator.</p>
+                        <div class="course-info">
+                            <span><i class="far fa-clock"></i> Completed</span>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Detail Page -->
+    <section id="course-detail" class="page">
+        <div class="container" style="padding-top: 5rem; padding-bottom: 5rem;">
+            <h2 class="section-title">Course Details</h2>
+            <div class="detail-content">
+                <div class="detail-img">
+                    <img src="images/spirituals-growth-1.jpg">
+                </div>
+                <div class="detail-text">
+                    <h2>Quran Reading & Tajweed</h2>
+                    <p>This comprehensive course is designed for students who want to learn how to read the Quran correctly with proper Tajweed rules. The course covers all the essential aspects of Quranic recitation.</p>
+                    
+                    <h3>What You'll Learn</h3>
+                    <ul class="detail-list">
+                        <li><i class="fas fa-check-circle"></i> Correct pronunciation of Arabic letters</li>
+                        <li><i class="fas fa-check-circle"></i> Basic and advanced Tajweed rules</li>
+                        <li><i class="fas fa-check-circle"></i> Rules of Noon Sakinah and Tanween</li>
+                        <li><i class="fas fa-check-circle"></i> Rules of Meem Sakinah</li>
+                        <li><i class="fas fa-check-circle"></i> Madd (elongation) rules</li>
+                        <li><i class="fas fa-check-circle"></i> Practical application on Quranic verses</li>
+                    </ul>
+                    
+                    <h3>Course Duration</h3>
+                    <p>12 weeks (3 months) with 2 sessions per week</p>
+                    
+                    <h3>Instructor</h3>
+                    <p>Ustadha Izba Sutan (CEO & Founder)</p>
+                    
+                    <h3>Certificate</h3>
+                    <p>Free certificate upon successful completion</p>
+                    
+                    <a href="#contact" class="btn">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Page -->
+    <section id="classes" class="page">
+        <div class="container" style="padding-top: 5rem; padding-bottom: 5rem;">
+            <h2 class="section-title">How Our Classes Work</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Our classes are conducted through WhatsApp groups to provide an interactive learning experience. Here's how the process works:</p>
+            
+            <div class="class-process">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Registration</h3>
+                    <p>Fill out the registration form with your details and course preference.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Verification</h3>
+                    <p>Our team verifies your information and confirms your enrollment.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Group Assignment</h3>
+                    <p>You're added to two WhatsApp groups: Rah E Noor (main) and Feedback group.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Learning Process</h3>
+                    <p>Lectures and materials are shared in the main group. You complete tasks and assignments.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h3>Feedback & Support</h3>
+                    <p>Share your completed tasks in the feedback group for instructor evaluation.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <h3>Certificate</h3>
+                    <p>Receive your certificate upon successful course completion.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <h3>Course Schedule</h3>
+                <p>You can still join the ongoing course. Our courses change every 2–3 months, and the current batch is in progress.</strong>.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Page -->
+    <section id="blogs" class="page">
+        <div class="container" style="padding-top: 5rem; padding-bottom: 5rem;">
+            <h2 class="section-title">RAH E NOOR QURAN SITE</h2>
+            <div class="blog-cards">
+                <div class="blog-card" data-blog="1">
+                    <div class="blog-img" style="background-image: url('images/03.webp')"></div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">The Importance of Tajweed in Quran Recitation</h3>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> March 1, 2025</span>
+                            <span><i class="far fa-user"></i>Izba Sultan</span>
+                        </div>
+                        <p>Learn why proper Tajweed is essential for correct Quran recitation and how it enhances your connection with the Quran.</p>
+                        <a href="#" class="btn read-more-btn" style="margin-top: 1rem; display: inline-block;">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card" data-blog="2">
+                    <div class="blog-img" style="background-image: url('images/logu.jpg')"></div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Rah e Noor Quran Site</h3>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> February 22, 2025</span>
+                            <span><i class="far fa-user"></i> Izba Sultan</span>
+                        </div>
+                        <p>Rah-e-Noor Quran Site helps women learn the Quran and Islam through authentic Hadith-based guidance, making understanding clear and practical.</p>
+                        <a href="#" class="btn read-more-btn" style="margin-top: 1rem; display: inline-block;">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card" data-blog="3">
+                    <div class="blog-img" style="background-image: url('images/--.jpg')"></div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Memorizing the Quran: Tips for Success</h3>
+                        <div class="blog-meta">
+                            <span><i class="far fa-calendar"></i> February 15, 2025</span>
+                            <span><i class="far fa-user"></i>Izba Sultan</span>
+                        </div>
+                        <p>Practical advice and effective techniques to help you successfully memorize the Holy Quran with consistency, focus, and deep understanding.</p>
+                        <a href="https://wa.me/923001234567?text=Assalam%20o%20Alaikum%20I%20want%20to%20read%20more%20about%20Rah-e-Noor%20Quran%20Site" 
+   target="_blank" 
+   class="btn read-more-btn" 
+   style="margin-top: 1rem; display: inline-block;">
+   Read More
+</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page">
+        <div class="container" style="padding-top: 5rem; padding-bottom: 5rem;">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="images/m.jpg">
+                </div>
+                <div class="about-text">
+                    <h2>Our Mission</h2>
+                    <p>Rah-e-Noor Quran Site is an online platform created with the vision of bringing women closer to the Quran and authentic Islamic knowledge. In today’s busy world, many people — especially women — wish to learn the Quran correctly but find it hard to access reliable and structured guidance. This platform was developed to bridge that gap.</p>
+                    <br>
+                    <h3>Our Story</h3>
+                    <p>Founded by  Izba Sutan, Rahyn Noor Quran began as a small initiative to teach Quran to a handful of students. Today, we have educated over 5,000 students from around the world through our structured online courses.</p>
+                    <br>
+                    <h3>What We Offer</h3>
+                    <ul class="mission-list">
+                        <li><i class="fas fa-check-circle"></i> Carefully structured courses to strengthen understanding</li>
+                        <li><i class="fas fa-check-circle"></i> Focus on authentic Islamic knowledge from reliable sources</li>
+                        <li><i class="fas fa-check-circle"></i> Easy Free online registration process</li>
+                        <li><i class="fas fa-check-circle"></i> Learn at your own pace, from anywhere in the world</li>
+                        <li><i class="fas fa-check-circle"></i> Short-term courses (2-6 months duration)</li>
+                        <li><i class="fas fa-check-circle"></i> Free certificates upon course completion</li>
+                        <li><i class="fas fa-check-circle"></i> Exclusive courses for women and girls</li>
+                    </ul>
+                    
+                    <h3>Our Vision</h3>
+                    <p>To become a leading platform for authentic Islamic education, empowering Muslims worldwide with knowledge that strengthens their faith and practice.</p>
+                    <br><br>
+                    <!-- WhatsApp Direct Link -->
+                    <a href="https://wa.me/923125070383" target="_blank" class="btn">Join Us Today</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="page">
+        <div class="container" style="padding-top: 5rem; padding-bottom: 5rem;">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Have questions about our courses or registration? Reach out to us and we'll be happy to help.</p>
+                    <ul class="contact-details">
+                        <li><i class="fas fa-envelope"></i>rahynnoorquran@.com</li>
+                        <li><i class="fas fa-phone"></i> +92 312 5070383</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Islamic Education Center, Karachi, Pakistan</li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/61578006094726/posts/pfbid0VhtZruTDEV3sxdPdnrkyPu3JbeZ5HfuaytT7mSZhzYykxb4rvhGgWDXrVxXoPoDGl/?sfnsn=wa"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/reel/DPBMRvXDUTU/?igsh=MXR6Yjk5Y25iZ2dtMw=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://vm.tiktok.com/ZSHWhJaa1bgpC-Ojiuq/"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Course Interest</label>
+                            <select id="course" class="form-control" required>
+                                <option value="">Select a course</option>
+                                <option value="quran-tajweed">Quran Reading & Tajweed</option>
+                                <option value="islamic-studies">Islamic Studies</option>
+                                <option value="arabic">Arabic for Beginners</option>
+                                <option value="hifz">Quran Memorization (Hifz)</option>
+                                <option value="history">Islamic History</option>
+                                <option value="fiqh">Fiqh of Worship</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <a href="https://wa.me/923125070383?text=Assalam%20o%20Alaikum%20I%20want%20to%20send%20a%20message" target="_blank">
+  <button type="button" class="btn">Send Message</button>
+</a>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <h3><i class="fas fa-moon"></i> Rahyn Noor Quran</h3>
+                    </div>
+                    <p>Enlightening Hearts with Islamic Knowledge through free online Quran and Islamic courses.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1AQ27Nojob/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/reel/DPBMRvXDUTU/?igsh=MXR6Yjk5Y25iZ2dtMw=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://vm.tiktok.com/ZSHWhJaa1bgpC-Ojiuq/"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" class="footer-nav-link" data-page="home">Home</a></li>
+                        <li><a href="#courses" class="footer-nav-link" data-page="courses">Courses</a></li>
+                        <li><a href="#about" class="footer-nav-link" data-page="about">About Us</a></li>
+                        <li><a href="#contact" class="footer-nav-link" data-page="contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on new courses and events.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <!-- Footer -->
+
+  <p class="developer-credit">
+  Made with <span class="heart">❤</span> by 
+  <a href="https://lnkd.in/dsgBpjsT" target="_blank">Mahnoor Zaheer</a> 
+  | WhatsApp: <a href="https://wa.me/923141836979" target="_blank">0314-1836979</a>
+</p>
+
+
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
