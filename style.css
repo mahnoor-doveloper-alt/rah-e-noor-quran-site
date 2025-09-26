@@ -1,70 +1,4 @@
-
-
-
-.whatsapp-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 20px;
-  left: 20px;        /* 👈 ab left par */
-  right: auto;       /* right ko remove kar diya */
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 1000;
-  animation: blink 1.5s infinite;
-}
-
-.whatsapp-float i {
-  margin-top: 15px;
-}
-
-/* Blink animation */
-@keyframes blink {
-  0% {opacity: 1;}
-  50% {opacity: 0.5;}
-  100% {opacity: 1;}
-}
-
-/* Responsive size for small devices */
-@media (max-width: 600px) {
-  .whatsapp-float {
-    width: 50px;
-    height: 50px;
-    font-size: 24px;
-    bottom: 15px;
-    left: 15px;     /* responsive mein bhi left par */
-    right: auto;
-  }
-  .whatsapp-float i {
-    margin-top: 12px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        :root {
+:root {
             --primary-color: #9A7B4F;
             --secondary-color: #a7a29c;
             --accent-color: #f8f9fa;
@@ -80,28 +14,13 @@
             box-sizing: border-box;
         }
 
-
-        body {
-  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Arial', sans-serif;
-  font-size: 20px; /* size bara karne ke liye */
-  line-height: 2; /* lines k darmiyan space barhane ke liye */
-}
-.rahnoor h2 {
-  font-size: 28px;
-  color: #003366; /* dark blue headings */
-  margin-top: 20px;
-}
-.rahnoor p {
-  color: #222; /* dark black text for readability */
-  margin-bottom: 15px;
-}
-
         body {
             font-family: 'Open Sans', sans-serif;
             line-height: 1.6;
             color: var(--text-color);
             background-color: #f5f5f5;
             overflow-x: hidden;
+            font-size: 16px; /* Base font size */
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -112,7 +31,7 @@
         }
 
         .container {
-            width: 90%;
+            width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 15px;
@@ -267,14 +186,14 @@
         }
 
         .slide-1 {
-    background-image: url('images/RAH\ e\ NOOR.jpg'); /* Your original image */
-}
-.slide-2 {
-    background-image: url('images/00.jpg'); /* Your original image */
-}
-.slide-3 {
-    background-image: url('images/66.png'); /* Your original image */
-}
+            background-image: url('images/RAH%20e%20NOOR.jpg');
+        }
+        .slide-2 {
+            background-image: url('images/00.jpg');
+        }
+        .slide-3 {
+            background-image: url('images/66.png');
+        }
 
         .hero-content {
             position: absolute;
@@ -469,11 +388,6 @@
         }
 
         /* Course Detail Section */
-        .course-detail {
-            padding: 5rem 0;
-            background-color: white;
-        }
-
         .detail-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -523,11 +437,6 @@
         }
 
         /* Classes Section */
-        .classes {
-            padding: 5rem 0;
-            background-color: white;
-        }
-
         .class-process {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -576,11 +485,6 @@
         }
 
         /* Blogs Section */
-        .blogs {
-            padding: 5rem 0;
-            background-color: #f9f9f9;
-        }
-
         .blog-cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -729,11 +633,6 @@
         }
 
         /* About Section */
-        .about {
-            padding: 5rem 0;
-            background-color: white;
-        }
-
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -787,11 +686,6 @@
         }
 
         /* Contact Section */
-        .contact {
-            padding: 5rem 0;
-            background-color: #f9f9f9;
-        }
-
         .contact-wrapper {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1034,7 +928,60 @@
             transform: translateY(-5px);
         }
 
-        /* Responsive Design - Fixed and Enhanced */
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            left: 20px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+            animation: blink 1.5s infinite;
+        }
+
+        .whatsapp-float i {
+            margin-top: 15px;
+        }
+
+        /* Blink animation */
+        @keyframes blink {
+            0% {opacity: 1;}
+            50% {opacity: 0.5;}
+            100% {opacity: 1;}
+        }
+
+        /* Developer credit (footer text) */
+        .developer-credit {
+            text-align: center;
+            font-size: 14px;
+            color: #d6d1d1;
+            font-family: Arial, sans-serif;
+            margin: 10px 0;
+        }
+
+        /* heart icon color */
+        .developer-credit .heart {
+            color: #f7f7f7;
+        }
+
+        /* link style */
+        .developer-credit a {
+            color: hsl(0, 0%, 82%);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .developer-credit a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design - Enhanced */
         @media (max-width: 1200px) {
             .container {
                 width: 95%;
@@ -1185,6 +1132,18 @@
                 width: 45px;
                 height: 45px;
             }
+
+            /* WhatsApp button responsive */
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+                bottom: 15px;
+                left: 15px;
+            }
+            .whatsapp-float i {
+                margin-top: 12px;
+            }
         }
 
         @media (max-width: 576px) {
@@ -1268,6 +1227,23 @@
             .modal-blog-title {
                 font-size: 1.5rem;
             }
+
+            /* Adjust font sizes for mobile */
+            body {
+                font-size: 14px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            h3 {
+                font-size: 1.3rem;
+            }
         }
         
         @media (max-width: 400px) {
@@ -1300,6 +1276,18 @@
             .blog-title {
                 font-size: 1.3rem;
             }
+
+            /* WhatsApp button for very small screens */
+            .whatsapp-float {
+                width: 45px;
+                height: 45px;
+                font-size: 20px;
+                bottom: 10px;
+                left: 10px;
+            }
+            .whatsapp-float i {
+                margin-top: 10px;
+            }
         }
 
         /* Fix for very small screens */
@@ -1325,34 +1313,21 @@
             .blog-img {
                 height: 150px;
             }
+
+            /* Further font size adjustments */
+            body {
+                font-size: 13px;
+            }
+            
+            h1 {
+                font-size: 1.6rem;
+            }
+            
+            h2 {
+                font-size: 1.4rem;
+            }
+            
+            h3 {
+                font-size: 1.2rem;
+            }
         }
-
-
-        
-
-
-
-        /* Developer credit (footer text) */
-.developer-credit {
-  text-align: center;          /* center align */
-  font-size: 14px;             /* slightly small for classy look */
-  color: #d6d1d1;                 /* muted grey text */
-  font-family: Arial, sans-serif;
-  margin: 10px 0;
-}
-
-/* heart icon color */
-.developer-credit .heart {
-  color: #f7f7f7;              /* soft red heart */
-}
-
-/* link style */
-.developer-credit a {
-  color: hsl(0, 0%, 82%);              /* WhatsApp green */
-  text-decoration: none;
-  font-weight: 600;            /* slightly bold */
-}
-
-.developer-credit a:hover {
-  text-decoration: underline;  /* hover effect */
-}
